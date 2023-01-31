@@ -6,18 +6,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Role {
-
+public class BillType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private boolean isDelete;
 
-    public Role() {
+    public BillType() {
     }
 
-    public Role(int id, String name, boolean isDelete) {
+    public BillType(int id, String name, boolean isDelete) {
         this.id = id;
         this.name = name;
         this.isDelete = isDelete;
